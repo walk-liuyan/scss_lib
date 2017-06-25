@@ -1,0 +1,32 @@
+$m-white: white;
+$m-black: black;
+$m-green: green;
+$m-red: red;
+
+@each $c-name, $color in (c-white, $m-white),
+        (c-black, $m-black),
+        (c-red, $m-red),
+        (c-green, $m-green), {
+  .#{$c-name} {
+    color: $color;
+  }
+}
+
+@each $bg-name, $color in (bg-white, $m-white),
+        (bg-black, $m-black),
+        (bg-red, $m-red),
+        (bg-green, $m-green), {
+  .#{$bg-name} {
+    background-color: $color;
+  }
+}
+
+@each $bd-name, $color in (bd-white, $m-white),
+        (bd-red, $m-red),
+        (bd-balck, $m-black),
+        (bd-green, $m-green), {
+  .#{$bd-name} {
+    border: 1px solid $color !important;
+  }
+}
+

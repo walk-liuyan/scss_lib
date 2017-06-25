@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Sass template
+.sass-cache/
+sass
+*.css.map
+*.css
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen

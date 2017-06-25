@@ -1,0 +1,47 @@
+@mixin rounded-corners($argus){
+  -moz-border-radius: 1px * $argus !important;
+  -webkit-border-radius: 1px * $argus !important;
+  border-radius: 1px * $argus !important;
+}
+@mixin rounded($top,$right,$bottom,$left){
+  -moz-border-radius: $top * 1px $right * 1px $bottom * 1px $left * 1px !important;
+  -webkit-border-radius:$top * 1px $right * 1px $bottom * 1px $left * 1px !important;
+  border-radius: $top * 1px $right * 1px $bottom * 1px $left * 1px !important;
+}
+.no-rounded{
+  @include rounded-corners(0)
+}
+.rounded{
+  @include rounded-corners(4)
+}
+.rounded-x{
+  border-radius: 50% !important;
+}
+.rounded-2x{
+  @include rounded-corners(10)
+}
+.rounded-3x{
+  @include rounded-corners(15)
+}
+.rounded-4x{
+  @include rounded-corners(20)
+}
+.rounded-sm{
+  @include rounded-corners(2)
+}
+.rounded-md{
+  @include rounded-corners(3)
+}
+.rounded-top{
+  @include rounded(4,4,0,0);
+}
+.rounded-left{
+  @include rounded(4,0,0,4);
+}
+.rounded-right{
+  @include rounded(0,4,4,0);
+}
+.rounded-bottom {
+  @include rounded(0,0,4,4);
+}
+

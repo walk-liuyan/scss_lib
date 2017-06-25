@@ -1,0 +1,48 @@
+.bxs-cont{
+  box-sizing: border-box;
+}
+.bxs-cont{
+  box-sizing: content-box;
+}
+.w-100{
+  width: 100%;
+}
+.db{
+  display: block;
+}
+.dn{
+  display:none;
+}
+.pos-rel{
+  position: relative;
+}
+.pos-abs{
+  position: absolute;
+}
+.pos-fix{
+  position: fixed;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.tc{
+  text-align: center;
+}
+.tr{
+  text-align: right;
+}
+.tl{
+  text-align: left;
+}
+.clear{
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
